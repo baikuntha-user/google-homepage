@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Webpage</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        header{
+            background-color: aqua;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            color: grey;
+        }
+        nav{
+            float: left;
+            width: 30%;
+            height: 350px;
+            background: #ccc;
+            padding: 10px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0px;
+        }
+        article{
+            float: left;
+            padding: 10px;
+            width: 70%;
+            height: 350px;
+            background: pink;
+        }
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: seashell;
+            padding: 40px;
+            text-align: right;
+            font-size: 20px;
+            font-family: serif;
+            color: pink;
+        }
+        @media(max-width: 600px;){nav, article{
+            width: 100%;
+            height: auto;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS layout Float</h2>
+    <p>this is a test page for two column boxes and footer and header on smaller screens the column will stack on top of each other</p>
+    <p>resize the browser to check the same</p>
+    <header>Cities</header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Pune</a></li>
+                <li><a href="#">Mumbai</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Pune</h1>
+            <p>Pune is a beautiful citi</p>
+            <p>this is the place where Chatrapati Shivaji mharaja is worshipped unlikely majority people is marathi and many peoples come to pune for there career</p>            
+        </article>
+    </section>
+    <footer>
+        <p>footer file</p>
+    </footer>
+</body>
+</html>
