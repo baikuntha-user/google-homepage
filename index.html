@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        .top-right{
+            float: right;          
+        }
+        .top-right-corner li{
+            display: inline;
+        }
+        #right-corner{
+            float: right;
+        }
+        img{
+            position: fixed;
+            left: 850px;
+            right: 50%;
+            top: 25%;          
+        }
+        #search{            
+            padding: 15px 75px;
+            box-sizing: border-box;
+            border-radius: 30px;
+            border-color:rgba(214, 210, 210, 0.979) 1px;
+            position: absolute;
+            top: 320px;
+            left: 43%;
+            
+        }
+        button{
+            font-family: serif;
+            font-size: 15px;
+            padding: 5px;
+            margin-right: 20px;
+            background-color: rgb(185, 179, 179);
+            border-radius: 5px;
+            
+        }
+        .first-element{
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            left: 150px;
+            top: 380px;
+        }
+        .india-tag{
+            padding: 10px;
+            background-color: rgb(206, 201, 201);
+            width: 100%;
+            position: fixed;
+            bottom: 100px;
+            margin-right: 0px;
+        }
+        .bottom{
+            background-color: rgb(206, 201, 201);
+            padding: 0px;
+            width: 100%;
+            position: fixed;
+            border: 1px solid grey;
+            bottom: 0px; 
+
+        }
+        .bottom-left-corner li{
+            display: inline;
+            margin-right: 10px;
+            position: relative;
+        }
+        .btm-rt-corner{
+            float: right;
+        }
+        .bottom-right-corner li{
+            display: inline;
+            margin-right: 10px; 
+            position: relative;
+            bottom: 50px;
+            right: 20px;         
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top-right">
+        <ul class="top-right-corner">
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li> 
+            <button>Sign in</button>           
+        </ul>       
+    </div>
+        
+        <img src="googlelogo_color_272x92dp.png" alt="logo">
+    <center>
+        <form>
+            <input type="text" id="search" name="search">
+        </form>
+    </center>
+    <div class="first-element">
+        <button>Google Search</button>
+        <button>I'm feeling Lucky</button>
+    </div>
+    <div class="india-tag">India</div>
+    <div class="bottom">
+        <ul class="bottom-left-corner">
+            <li>About</li>
+            <li>Advertising</li>
+            <li>Business</li>
+            <li>How Search Works</li>
+        </ul>
+        <secction class="btm-rt-corner">
+            <ul class="bottom-right-corner">
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Settings</li>
+            </ul>
+        </secction>
+    </div>
+</body>
+</html>
